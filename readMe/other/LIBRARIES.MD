@@ -1,0 +1,17 @@
+# Useful Libraries
+
+- [React Hook Form](https://react-hook-form.com/)
+- [Chart](https://recharts.org/en-US/)
+- [React Big Calendar](https://www.npmjs.com/package/react-big-calendar)
+- [Drag & Drop Features](https://github.com/atlassian/react-beautiful-dnd)
+- [React Tables](https://react-tables.com/)
+- [React JoyRide - Create Guided Tour for your app](https://react-joyride.com/)
+- [React Advanced Cropper](https://advanced-cropper.github.io/react-advanced-cropper/)
+- [React Colorful](https://omgovich.github.io/react-colorful/)
+- [React Spring](https://www.react-spring.dev/)
+- [React Popper](https://popper.js.org/react-popper/)
+- [React Pdf Viewer](https://react-pdf-viewer.dev/)
+- [Translation/Internationalization](https://react.i18next.com/)
+- [React Icons](https://react-icons.github.io/react-icons/)
+- [React Audio Player](https://www.npmjs.com/package/react-audio-player)
+- [React Image Slider](https://www.npmjs.com/package/react-slideshow-image)
