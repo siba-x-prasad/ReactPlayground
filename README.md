@@ -1,12 +1,12 @@
 # React JS
 
-## [CSS]()
+## CSS
 
 - [BASICS](https://github.com/LintangWisesa/CSS_Tutorial)
 - [CSS Tutorial with Notes](https://github.com/kishanrajput23/CSS-Tutorial)
 - [CSS 3](https://github.com/dinanathsj29/css3-fundamentals-tutorial)
 
-## [Javascript]()
+## Javascript
 
 - [JS beginner Tutorial](https://github.com/dinanathsj29/javascript-beginners-tutorial)
 - [30 JS concepts](https://github.com/siba-x-prasad/Useful_JavaScript30)
@@ -23,7 +23,7 @@
 - [Tutorial with Example](https://github.com/TypeStrong/learn-typescript)
 - [TypeScript With React](https://github.com/gitdagray/typescript-course)
 
-## [React JS]()
+## React JS Tutorial websites
 
 - [React.dev](https://react.dev/learn)
 - [Getting Started](https://legacy.reactjs.org/docs/getting-started.html)
