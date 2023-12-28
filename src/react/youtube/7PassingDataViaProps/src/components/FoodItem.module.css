@@ -1,0 +1,13 @@
+.sp-item {
+  background-color: khaki;
+}
+
+.spSpan {
+  font-weight: 500;
+  color: red;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+}

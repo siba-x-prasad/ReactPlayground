@@ -1,9 +1,10 @@
+import FoodHeader from "./FooHeader";
 import FoodItem from "./FoodItem";
 
 const FoodList = (props) => {
   return (
     <>
-      <h1>Healthy Food</h1>
+      <FoodHeader/>
        <ul className="list-group">
          {props.foodItems.map(item => <FoodItem key = {item} name = {item}/> )}
      </ul>
