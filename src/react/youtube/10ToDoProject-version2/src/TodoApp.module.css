@@ -1,0 +1,12 @@
+.todoContainer {
+  width: 50%;
+  margin: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
