@@ -3,7 +3,8 @@ import AddToDo from './components/AddTodo'
 import ToDoList from './components/TodoList'
 import styles from './TodoApp.module.css'
 import { useState } from 'react'
-import InputError from './components/InputError'
+import InputError from './components/InputError' 
+import AddTodoWithRef from './components/AddTodoWithRef.jsx'
 
 function ToDoApp() {
 
@@ -28,10 +29,6 @@ const onNewItemChange = (name, date) => {
   saveData(name, date);
 };
 
-const handleSaveClick = (event) => {
-  console.log(event);
-  console.log(`handleSaveClick ${todoDate} ${todoValue}`);
-}
 
 function saveData(name, date){
   console.log("saveData name "+name+" date "+date);
@@ -73,6 +70,7 @@ if (name.trim().length !== 0 && date.trim().length !== 0) {
     <AddToDo 
         onNewItem = {onNewItemChange} 
     /> 
+    <AddTodoWithRef  onNewItem = {onNewItemChange} />
     {errorMessage.trim().length !== 0 && ( <InputError errorMessage = {errorMessage}/>)}
     <ToDoList todoItems={todoItems} onDeleteClick = {onDeleteClick} onEditClick = {onEditClick}/>
   </center>
