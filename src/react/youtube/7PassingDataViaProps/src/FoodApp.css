@@ -1,5 +1,13 @@
 
 .food-heading {
-  background-color: silver;
   color: red;
+  text-align:center;
+}
+
+.spList {
+  margin: 15px;
+}
+
+.sp-error {
+  margin: 5px;
 }
