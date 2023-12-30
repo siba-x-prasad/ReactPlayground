@@ -42,7 +42,7 @@ function AddToDo({ onNewItem }) {
             onChange={(event) => handleNameChange(event)}
             />
     </div>
-    <div className="col-2">
+    <div className="col-4">
       <input 
             className={styles.spInput} 
             type="date" 

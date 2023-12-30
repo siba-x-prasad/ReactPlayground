@@ -14,18 +14,18 @@ const onEditClickedLocal = () => {
 }
 
   return (
-    <div className={`${styles.itemContainer} text-center`}>
+    <div className={`${styles.itemContainer}`}>
      <div className={`${styles.spRow} row`}>
-    <div className="col">{todoName}</div>
-    <div className="col">{todoDate}</div>
-    <div className="col-md-auto">
+    <div className="col-6">{todoName}</div>
+    <div className="col-2">{todoDate}</div>
+    <div className="col col-lg-2">
       <button 
         type="button" 
         className={`${styles.spButton} btn btn-danger`}
         onClick={() => onDeleteClick(todoName)}
         > <AiOutlineDelete/> </button>
     </div>
-        <div className="col-md-auto">
+        <div className="col col-lg-2">
       <button 
           type="button" 
             className={`${styles.spButton} btn btn-success`}
