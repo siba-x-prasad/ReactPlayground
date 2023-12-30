@@ -1,0 +1,23 @@
+h1 {
+  font-weight: 700;
+  font-size: 45px;
+  margin: 10px;
+  margin-bottom: 20px;
+}
+
+input {
+  width: 100%;
+}
+
+.itemContainer {
+  text-align: left;
+  margin-top: 5px;
+}
+
+.spRow {
+  margin: 10px 5px;
+}
+
+.spButton {
+  min-width: 80px;
+}

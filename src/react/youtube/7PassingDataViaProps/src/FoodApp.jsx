@@ -20,7 +20,6 @@ function FoodApp() {
   };
 
   const handleAddButtonClicked = () => {
-    console.log(`handleAddButtonClicked ${foodState} ${foodState.trim == ''}`);
       if (foodState.trim().length !== 0) {
         let newFoodItem = foodState;
         let newFoodItems = [...foodList, newFoodItem];

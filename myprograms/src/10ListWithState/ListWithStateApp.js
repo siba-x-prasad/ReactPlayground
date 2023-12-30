@@ -57,7 +57,7 @@ class ListWithStateApp extends Component{
         if(this.state.showPersons){
             persons = (
                 <div>
-                    {this.state.persons.map((person,index) =>{
+                    {this.state.persons.map((person,index) => {
                         return <Person name={person.name}
                                 age={person.age}
                                 deletePerson={ () => this.deletePersonHandler(index)}

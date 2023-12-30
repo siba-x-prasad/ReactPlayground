@@ -1,0 +1,25 @@
+h1 {
+  font-weight: 700;
+  font-size: 45px;
+  margin: 10px;
+  margin-bottom: 20px;
+}
+
+.spInput {
+  border: 1px solid black;
+  border-radius: 5px;
+  height: 40px;
+}
+
+.addToDoContainer {
+  text-align: left;
+  margin: 10px;
+}
+
+.spRow {
+  margin: 10px 5px;
+}
+
+.spButton {
+  min-width: 80px;
+}
