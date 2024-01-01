@@ -11,38 +11,35 @@ import Groups from "./components/Groups";
 import SavedPostList from "./components/SavedPostList";
 import PostListProvider from "./store/post-list-store";
 
-
 // https://github.com/KG-Coding-with-Prashant-Sir/React_Complete_YouTube/tree/main/Projects/7-social-media
 function App() {
   const [selectedTab, setSelectedTab] = useState("Home");
 
-  const getSelectedTab = () => {
-    switch (selectedTab) {
-      case "Home":
-        return <PostList></PostList>;
-      case "Create Post":
-        return <CreatePost></CreatePost>;
-      case "Saved Post":
-        return <SavedPostList></SavedPostList>;
-      case "Friends":
-        return <Friends></Friends>;
-      case "Groups":
-        return <Groups></Groups>;
-    }
-  };
-
   return (
     <PostListProvider>
-      <>
-        <div className="appContainer">
-          <Sidebar selectedTab={selectedTab} setSelectedTab={setSelectedTab} />
-          <div className="content">
-            <Header></Header>
-            {getSelectedTab()}
-            <Footer></Footer>
-          </div>
+      <div className="app-container">
+        <Sidebar
+          selectedTab={selectedTab}
+          setSelectedTab={setSelectedTab}
+        ></Sidebar>
+        <div className="content">
+          <Header></Header>
+          {(() => {
+            if (selectedTab === "Home") {
+              return <PostList></PostList>;
+            } else if (selectedTab === "Create Post") {
+              return <CreatePost></CreatePost>;
+            } else if (selectedTab === "Saved Post") {
+              return <SavedPostList></SavedPostList>;
+            } else if (selectedTab === "Friends") {
+              return <Friends></Friends>;
+            } else if (selectedTab === "Groups") {
+              return <Groups></Groups>;
+            }
+          })()}
+          <Footer></Footer>
         </div>
-      </>
+      </div>
     </PostListProvider>
   );
 }
