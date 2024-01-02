@@ -34,3 +34,16 @@
   border-radius: 5px;
   padding: 5px;
 }
+
+.centerWelcome { 
+  
+      display: flex;
+  
+      align-items: center; 
+  
+      justify-content: center;
+  
+      text-align: center;
+      height: 200px;
+  
+}

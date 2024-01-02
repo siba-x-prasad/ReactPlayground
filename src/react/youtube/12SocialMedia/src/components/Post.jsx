@@ -1,11 +1,11 @@
 import { useContext } from "react";
 import { AiFillDelete } from "react-icons/ai";
 import { PostList } from "../store/post-list-store";
-import { FaComment, FaHeart } from "react-icons/fa";
-import { FaShare } from "react-icons/fa6";
+import { FaRegComment, FaHeart, FaRegHeart } from "react-icons/fa";
+import { LuShare } from "react-icons/lu";
 
 const Post = ({ post }) => {
-  const { deletePost } = useContext(PostList);
+  const { deletePost, addFavoritePost } = useContext(PostList);
 
   return (
     <div className="card post-card" style={{ width: "30rem" }}>
@@ -27,14 +27,19 @@ const Post = ({ post }) => {
         ))}
         <div className="container text-center media-action">
           <div className="row">
-            <div className="col">
-              <FaHeart />
+            <div
+              className="col"
+              onClick={() => {
+                addFavoritePost(post.id);
+              }}
+            >
+              {post.isFavorite ? <FaHeart /> : <FaRegHeart />}
             </div>
             <div className="col">
-              <FaComment />
+              <FaRegComment />
             </div>
             <div className="col">
-              <FaShare />
+              <LuShare />
             </div>
           </div>
         </div>
