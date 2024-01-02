@@ -7,19 +7,27 @@ const PostList = () => {
   // const [isOnline, setOnline] = useState(true);
   // setOnline(navigator.onLine);
   const { postList, addInitialPost } = useContext(PostListData);
+  const [dataFetched, setDataFetched] = useState(false);
   const handleFetchPost = () => {
     console.log(`handleFetchPost`);
+    setDataFetched(true);
+    setTimeout(function () {}, 20000);
     fetch("https://dummyjson.com/posts")
       .then((res) => res.json())
       .then((data) => {
         console.log(data.posts);
         addInitialPost(data.posts);
+        setDataFetched(false);
       });
   };
 
   return (
     <>
-      {postList.length === 0 ? (
+      {dataFetched ? (
+        <div className="spinner-border center-spinner" role="status">
+          <span className="visually-hidden">Loading...</span>
+        </div>
+      ) : postList.length === 0 ? (
         <WelcomePage onFetchPost={handleFetchPost} />
       ) : (
         postList.map((post) => <Post key={post.id} post={post} />)
