@@ -5,22 +5,16 @@
 - The useMemo Hook only runs when one of its dependencies update.
 - This can improve performance.
 
-1. Memoization: useMemo caches the result of
-   expensive calculations to enhance performance.
+1. Memoization: useMemo caches the result of expensive calculations to enhance performance.
 
-2. Re-computation: Only re-computes the memoized
-   value when specific dependencies change.
-3. Optimization: Helps prevent unnecessary
-   recalculations, improving component rendering
+2. Re-computation: Only re-computes the memoized value when specific dependencies change.
+3. Optimization: Helps prevent unnecessary recalculations, improving component rendering
    efficiency.
-4. Dependency Array: Uses an array of
-   dependencies to determine when to recompute
+4. Dependency Array: Uses an array of dependencies to determine when to recompute
    the cached value.
-5. Comparison with useCallback: While useCallback
-   memoizes functions, useMemo memoizes values
+5. Comparison with useCallback: While useCallback memoizes functions, useMemo memoizes values
    or results of functions.
-6. Best Use: Ideal for intensive computations or
-   operations that shouldn't run on every render.
+6. Best Use: Ideal for intensive computations or operations that shouldn't run on every render.
 
 ## useMemo & useCallback
 
