@@ -8,6 +8,11 @@ const PostList = () => {
   // setOnline(navigator.onLine);
   const { postList, addInitialPost } = useContext(PostListData);
   const [dataFetched, setDataFetched] = useState(false);
+
+  if (!dataFetched) {
+    handleFetchPost();
+  }
+
   const handleFetchPost = () => {
     console.log(`handleFetchPost`);
     setDataFetched(true);
@@ -24,8 +29,10 @@ const PostList = () => {
   return (
     <>
       {dataFetched ? (
-        <div className="spinner-border center-spinner" role="status">
-          <span className="visually-hidden">Loading...</span>
+        <div className="d-flex justify-content-center">
+          <div className="spinner-border" role="status">
+            <span className="visually-hidden">Loading...</span>
+          </div>
         </div>
       ) : postList.length === 0 ? (
         <WelcomePage onFetchPost={handleFetchPost} />
