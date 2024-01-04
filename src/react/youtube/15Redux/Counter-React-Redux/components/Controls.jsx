@@ -56,7 +56,7 @@ const Controls = () => {
         </button>
         <button
           type="button"
-          class="btn btn-warning"
+          className="btn btn-warning"
           onClick={handlePrivacyToggle}
         >
           Privacy Toggle
