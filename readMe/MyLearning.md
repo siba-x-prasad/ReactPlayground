@@ -6,7 +6,7 @@
 
 ## [React Setup](https://github.com/siba-x-prasad/ReactPlayground/blob/main/readMe/youtube/2.ReactSetup.md)
 
-## [React Component](https://github.com/siba-x-prasad/ReactPlayground/blob/main/readMe/youtube/3.Components.md)
+## [React Component](https://github.com/siba-x-prasad/ReactPlayground/blob/main/readMe/youtube/3.components.md)
 
 ## [Bootstrap](https://github.com/siba-x-prasad/ReactPlayground/blob/main/readMe/youtube/4.Bootstrap.md)
 
