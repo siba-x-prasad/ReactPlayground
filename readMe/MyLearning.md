@@ -8,7 +8,7 @@
 
 ## [React Component](https://github.com/siba-x-prasad/ReactPlayground/blob/main/readMe/youtube/3.components.md)
 
-## [Bootstrap](https://github.com/siba-x-prasad/ReactPlayground/blob/main/readMe/youtube/4.Bootstrap.md)
+## [Bootstrap](https://github.com/siba-x-prasad/ReactPlayground/blob/main/readMe/youtube/4.bootstrap.md)
 
 ## [Fragment](https://github.com/siba-x-prasad/ReactPlayground/blob/main/readMe/youtube/5.Fragments.md)
 
@@ -18,7 +18,7 @@
 
 ## [Passing Data Via Props](https://github.com/siba-x-prasad/ReactPlayground/blob/main/readMe/youtube/8.PassingDataViaProops.md)
 
-## [CSS Module](https://github.com/siba-x-prasad/ReactPlayground/blob/main/readMe/youtube/9.CssModule.md)
+## [CSS Module](https://github.com/siba-x-prasad/ReactPlayground/blob/main/readMe/youtube/9.cssModule.md)
 
 ## [Passing Children](https://github.com/siba-x-prasad/ReactPlayground/blob/main/readMe/youtube/10.PassingChildren.md)
 
